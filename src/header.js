@@ -4,7 +4,7 @@ class Header extends React.Component {
   render(){
     return ( 
       <div>
-        <h1>Hello World Welcome</h1>
+        <h1 style={{textAlign: 'center'}}>Horned Beasts</h1>
       </div>
     );
   }
