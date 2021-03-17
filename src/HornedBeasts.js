@@ -12,10 +12,10 @@ class HornedBeasts extends React.Component {
   }
   addOne = () =>{
     this.setState({number: this.state.number+1});
-  } 
+  }
 
   render(){
-    return ( 
+    return (
       <div>
         <Card style={{ width: '24rem', backgroundColor: 'A0BAB2' }}>
           <h2>{this.props.title}</h2>
