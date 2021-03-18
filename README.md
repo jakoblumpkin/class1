@@ -93,3 +93,16 @@ Start time: 5:00 p.m.
 Finish time: 6:45 p.m.
 
 Actual time needed to complete: 1 hour 45 minutes
+
+
+----------------------------------------
+
+Number and name of feature: Display a Modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 3:29 p.m.
+
+Finish time: 
+
+Actual time needed to complete: _____
