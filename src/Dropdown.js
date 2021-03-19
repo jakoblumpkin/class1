@@ -1,7 +1,6 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 class Dropdown extends React.Component {
   constructor(props){
@@ -26,8 +25,8 @@ class Dropdown extends React.Component {
               >
                 <option name= "0" value="0">Choose...</option>
                 <option name= "1" value="1">One Horn</option>
-                <option name= "2" value="2">Two Horn</option>
-                <option name= "3" value="3">Three Horn</option>
+                <option name= "2" value="2">Two Horns</option>
+                <option name= "3" value="3">three Horns</option>
               </Form.Control>
             </Col>
             <Col xs="auto" className="my-1">
@@ -35,7 +34,6 @@ class Dropdown extends React.Component {
             <Col xs="auto" className="my-1">
             </Col>
           </Form.Row>
-          <Button>Submit</Button>
         </Form>
       </>
     );

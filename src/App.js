@@ -40,6 +40,7 @@ class App extends React.Component {
     var newOBJ=rawData.filter( function(beast) {
       return beast.horns===hornNum;
     });
+    console.log(newOBJ);
     this.setState({rawData: newOBJ});
   };
 
@@ -50,7 +51,7 @@ class App extends React.Component {
         <Header/>
         <Dropdown updateDate={this.updateDate}/>
         {this.showor()}
-        <Main Beastdata={rawData} updateFunction={this.updateInfo}
+        <Main Beastdata={this.state.rawData} updateFunction={this.updateInfo}
           answer={this.state.updateI} />
         <Footer/>
       </div>
