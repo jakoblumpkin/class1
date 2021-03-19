@@ -2,23 +2,30 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+//import useState from 'react';
+//import setState from 'react';
 
-function Example() {
+
+function Example(props) {
   return (
-    <Modal.Dialog>
-      <Modal.Header closeButton>
-        <Modal.Title>Modal title</Modal.Title>
-      </Modal.Header>
+    <>
+      <Modal.Dialog>
+        <Modal.Header closeButton>
+          <Modal.Title>{props.rawData.title}</Modal.Title>
+        </Modal.Header>
 
-      <Modal.Body>
-        <p>Modal body text goes here.</p>
-      </Modal.Body>
+        <Modal.Body>
+          <img src={props.rawData.image_url} height='300px;'></img>
+          <p>{props.rawData.description}</p>
+        </Modal.Body>
 
-      <Modal.Footer>
-        <Button variant="secondary">Close</Button>
-        <Button variant="primary">Save changes</Button>
-      </Modal.Footer>
-    </Modal.Dialog>
-  );}
+        <Modal.Footer>
+          <div onClick={props.closeModal}><Button variant="secondary">Close</Button></div>
+        </Modal.Footer>
+      </Modal.Dialog>
+    </>
+  );
+}
+
 //render(<Example />);
 export default Example;
